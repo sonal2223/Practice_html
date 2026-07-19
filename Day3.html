@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <h3>1.Rowspan</h3>
+<table border="2">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>Grade</th>
+    </tr>
+</thead>
+<tbody>
+<tr>
+    <th rowspan="3">Rahul</th>
+    <td>Math</td>
+    <td>90</td>
+    <td>A</td>
+</tr>
+<tr>
+    <td>Science</td>
+    <td>85</td>
+    <td>B</td>
+</tr>
+<tr>
+    <td>English</td>
+    <td>80</td>
+    <td>C</td>
+</tr>
+
+<tr>
+    <th rowspan="3">Priya</th>
+    <td>Maths</td>
+    <td>95</td>
+    <td>A</td>
+</tr>
+<tr>
+    <td>Science</td>
+    <td>88</td>
+    <td>B</td>
+</tr>
+<tr>
+    <td>English</td>
+    <td>92</td>
+    <td>A</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr>
+<h3>2.Colspan</h3>
+<table border="2">
+    <thead>
+    <th colspan="7">Employee Attendance</th>   
+    <tr>
+        <th>Employee Name</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+    </tr>
+    <tr>
+        <td>Rahul</td>
+        <td>P</td>
+        <td>P</td>
+        <td>A</td>
+        <td>P</td>
+        <td>P</td>
+        <td>A</td>
+    </tr>
+    <tr>
+        <td>Priya</td>
+        <td>P</td>
+        <td>A</td>
+        <td>P</td>
+        <td>P</td>
+        <td>A</td>
+        <td>P</td>
+    </tr>
+    <tfooter>
+        <tr>
+            <td colspan="7" align="center"> Total Employees: 2</td>
+        </tr>
+    </tfooter>
+    </table>
+
+
+</table>
+
+<hr>
+    <h3>3.Rowspan and Colspan</h3>
+    <h4>1.Time Table</h4>
+    <table border="2">
+            <tr>
+                <th rowspan="6">Hours</th>
+                <th>Mon</th> 
+                <th>Tue</th> 
+                <th>Wed</th>  
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+               <td>Math</td>
+                <td>Science</td>
+                <td>Math</td>
+                <td>Science</td>
+                <td>Arts</td> 
+            </tr>
+
+            <tr>
+        <td colspan="5" align="center">Lunch</td>
+         </tr> 
+            <tr>
+                <td>Maths</td>
+                <td>Science</td>
+                 <td>Maths</td>
+                <td rowspan="2" colspan="2">Project</td>
+            </tr>  
+            <tr>
+                <td>Maths</td>
+                <td>Science</td>
+                 <td>Maths</td>
+            </tr>    
+    </table>
+
+    <h4>2.School Result Table</h4>
+    <table border="2">
+<thead>
+    <tr>
+        <th colspan="10">Student Result</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th rowspan="2">Roll No</th> 
+        <th rowspan="2">Name</th>
+        <th colspan="4">Semester 1</th>
+        <th colspan="4">Semester 2</th>  
+    </tr>
+    <tr>
+        <th>HTML</th>
+        <th>CSS</th>
+        <th>Javascript</th>
+        <th>Bootstrap</th>
+
+        <th>Java</th>
+        <th>Python</th>
+        <th>Data Science</th>
+        <th>Analytics</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Sonal</td>
+        <td>90</td>
+        <td>93</td>
+        <td>43</td>
+        <td>45</td>
+        <td>34</td>
+        <td>56</td>
+        <td>87</td>
+        <td>87</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Sakshi</td>
+        <td>70</td>
+        <td>73</td>
+        <td>73</td>
+        <td>35</td>
+        <td>34</td>
+        <td>56</td>
+        <td>77</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Sanika</td>
+        <td>30</td>
+        <td>43</td>
+        <td>53</td>
+        <td>65</td>
+        <td>74</td>
+        <td>86</td>
+        <td>97</td>
+        <td>17</td>
+    </tr>
+</tbody>
+    </table>
+</body>
+</html>
