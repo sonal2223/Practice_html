@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+}
+
+p{
+    color: crimson;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+button{
+    color: beige;
+    background-color: darkgreen;
+    font-size: 20px;
+}
