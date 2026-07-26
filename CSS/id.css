@@ -1,0 +1,15 @@
+#info{
+    color: blue;
+    background-color: aqua;
+    font-size: 60px;
+    text-align: center;
+}
+#name{
+    color:blueviolet;
+    font-size: 40px;
+}
+#button{
+    color: bisque;
+    background-color: darkgreen;
+    font-size: 20px;
+}
