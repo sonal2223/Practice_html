@@ -3,11 +3,12 @@
     width: 200px;
     height: 150px;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    box-shadow: 3px 4px 5px gray;
 }
 
 .flex-item img{
