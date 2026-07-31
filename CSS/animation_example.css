@@ -1,0 +1,98 @@
+#s_animation{
+    width: 500px;
+    height: 350px;
+    /* background-color: cadetblue; */
+    background-image: url(../images/image8.jpg);
+    position:relative;
+    animation-name: movingBox;
+    -webkit-animation-name: movingBox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* animation-iteration-count: 2; */
+    animation-direction: reverse;
+    animation-delay: 5s;
+    border: 30px solid chocolate;
+    box-shadow: 30px 20px 10px gray;
+    
+}
+
+ /* @keyframes movingBox{
+    0%{background-color: yellow;left: 0px; top:0px}
+    25%{background-color: red;left: 300px; top: 0px;}
+    50%{background-color: blue;left: 300px; top: 300px;}
+    75%{background-color: brown;left: 0px; top: 300px;}
+    100%{background-color: green;left: 0px; top: 0px;} 
+} */
+
+@keyframes movingBox{
+0%{background-image: url(../images/image8.jpg); left: 0px; top: 0px;}
+25%{background-image: url(../images/image9.jpg); left: 300px; top:  0px;}
+50%{background-image: url(../images/image11.jpg); left: 300px; top: 300px;}
+75%{background-image: url(../images/image10.jpg); left: 0px; top: 300px;}
+100%{background-image: url(../images/image4.jpg); left: 0px; top: 0px;}
+
+}
+ul{
+    width: 200px;
+    padding: 10px;
+    list-style-type: none;
+    font-weight: 700;
+}
+li{
+    padding: 10px;
+    border: 2px solid red;
+    margin-bottom: 5px;
+    border: radius 40px; 
+}
+/* #b_color1{
+    background-color: blueviolet;
+}
+#b_color2{
+    background-color: chartreuse;
+} */
+ li:nth-child(even){
+    color:chocolate
+
+ }
+li:nth-child(5){
+    color:blue;
+ }
+ li:nth-child(even){
+   background-color:cadetblue
+ }
+ li:nth-child(odd){
+    background-color: darkgoldenrod;
+ }
+ .text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    font-size: 80px;
+    font-weight: 800;
+    perspective: 100px;
+ }
+ .text-container > b {
+    height: 90px;
+    box-shadow: 0px 10px 5px grey;
+    background: linear-gradient(to right, orange,red,green);
+    background-color:crimson;
+    background-clip: text;
+    color:transparent;
+    transform-origin: bottom;
+    animation: getUpDown 10s infinite;
+    border: 20px solid crimson;
+ }
+ .text-container > b:nth-child(1){ animation-delay: 0s;}
+ .text-container > b:nth-child(2){ animation-delay: 0.25s;}
+ .text-container > b:nth-child(3){ animation-delay: 0.50s;}
+ .text-container > b:nth-child(4){ animation-delay: 0.75s;}
+ .text-container > b:nth-child(5){ animation-delay: 1s;}
+
+ @keyframes getUpDown{
+    from {transform: rotatexX(-85deg);}
+    10%, 50%{transform: rotateX(0);}
+    60%, to{transform: rotateX(-85deg);}
+
+ }
